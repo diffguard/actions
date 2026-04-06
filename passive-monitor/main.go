@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/diffguard/diffguard/internal/lockfile"
+	"github.com/diffguard/diffguard/actions/shared/lockfile"
 )
 
 type PackageInput struct {
