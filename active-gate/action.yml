@@ -1,0 +1,20 @@
+name: 'DiffGuard Active Gate'
+description: 'Analyzes dependency changes in pull requests for supply chain risks'
+inputs:
+  token:
+    description: 'DiffGuard API token'
+    required: true
+  api-url:
+    description: 'DiffGuard API URL'
+    required: true
+    default: 'https://api.diffguard.io'
+  lockfile:
+    description: 'Path to lockfile (auto-detected if not specified)'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    DIFFGUARD_TOKEN: ${{ inputs.token }}
+    DIFFGUARD_API_URL: ${{ inputs.api-url }}
+    DIFFGUARD_LOCKFILE: ${{ inputs.lockfile }}
