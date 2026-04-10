@@ -1,6 +1,6 @@
 # DiffGuard Actions
 
-Open-source GitHub Actions used by [DiffGuard](https://github.com/diffguard/DiffGuard) — an organizational dependency intelligence platform for software supply chain security.
+Open-source GitHub Actions used by [DiffGuard](https://www.diffguard.io) — an organizational dependency intelligence platform for software supply chain security.
 
 This repository is the public, auditable half of DiffGuard's open-source boundary. The Actions ship here so that customers can read every line of code that runs inside their CI pipelines.
 
@@ -18,14 +18,6 @@ This repository is the public, auditable half of DiffGuard's open-source boundar
 - uses: diffguard/actions/active-gate@v0.1.0
   with:
     api-token: ${{ secrets.DIFFGUARD_TOKEN }}
-```
-
-## Using the lockfile parsers as a Go library
-
-The lockfile parsers have moved to a separate module:
-
-```go
-import "github.com/diffguard/lockfile"
 ```
 
 ## License
