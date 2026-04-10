@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/diffguard/diffguard/actions/shared/lockfile"
+	"github.com/diffguard/actions/shared/lockfile"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
